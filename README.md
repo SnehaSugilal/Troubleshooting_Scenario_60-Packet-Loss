@@ -22,9 +22,9 @@ Neither router connects to the other directly. Instead, both hand their traffic 
 ![Topology Diagram](Screenshot/broken_topology.png)
 
 ### IP Addressing Architecture
-* **R1:** LAN: `10.1.1.1/24` | WAN: `1.1.1.1/24`
-* **MPLS Provider:** FastEthernet0/0: `1.1.1.2/24` | FastEthernet0/1: `2.2.2.2/24`
-* **R2:** WAN: `2.2.2.1/24` | LAN: `20.1.1.1/24`
+* **R1:**             LAN: `10.1.1.1/24` | WAN: `1.1.1.1/24`
+* **MPLS Provider:** Fa0/0: `1.1.1.2/24` | FastEthernet0/1: `2.2.2.2/24`
+* **R2:**              WAN: `2.2.2.1/24` | LAN: `20.1.1.1/24`
 
 *Note: LANs are configured as Loopback interfaces so they remain permanently in an `up/up` state.*
 
