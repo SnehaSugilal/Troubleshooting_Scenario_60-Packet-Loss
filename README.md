@@ -5,7 +5,7 @@
 
 This lab simulates a common real-world issue where two remote sites connected across a service provider network are unable to ping each other. While the physical and data-link layers look perfectly healthy, traffic between the sites fails in erratic, unexpected ways.
 
-💾 **Download the Lab:** Grab `broken_net.pkt` and try to solve it yourself before looking at the solution!
+💾 **Download the Lab:** Grab [broken_net.pkt](broken_net.pkt) and try to solve it yourself before looking at the solution!
 
 ---
 
