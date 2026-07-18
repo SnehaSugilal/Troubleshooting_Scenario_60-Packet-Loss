@@ -19,7 +19,7 @@ Neither router connects to the other directly. Instead, both hand their traffic 
 
 ## Topology
 
-![Topology Diagram](screenshot/broken_topology.png)
+![Topology Diagram](Screenshot/broken_topology.png)
 
 ### IP Addressing Architecture
 * **R1:** LAN: `10.1.1.1/24` | WAN: `1.1.1.1/24`
