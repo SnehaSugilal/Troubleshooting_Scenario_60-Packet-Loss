@@ -18,7 +18,7 @@ Picture two corporate offices:
 Neither router connects to the other directly. Instead, both hand their traffic to a service provider in the middle (represented by the MPLS cloud), which is responsible for routing packets end-to-end.
 
 ## Topology
-
+![Topology Diagram](screenshots/broken_topology.png)
 ### IP Addressing Architecture
 * **R1:** LAN: `10.1.1.1/24` | WAN: `1.1.1.1/24`
 * **MPLS Provider:** FastEthernet0/0: `1.1.1.2/24` | FastEthernet0/1: `2.2.2.2/24`
@@ -26,7 +26,7 @@ Neither router connects to the other directly. Instead, both hand their traffic 
 
 *Note: LANs are configured as Loopback interfaces so they remain permanently in an `up/up` state.*
 
-> 💡 **NOTE: Why use a router for the "MPLS Cloud" instead of Packet Tracer's Cloud object?**
+> **NOTE: Why use a router for the "MPLS Cloud" instead of Packet Tracer's Cloud object?** <br>
 > The underlying issue in this scenario lives entirely within a routing table. Packet Tracer's generic Cloud object lacks a functional routing engine to break. Utilizing a standard Cisco router perfectly replicates a real-world provider edge (PE) environment.
 
 ---
@@ -39,7 +39,7 @@ When testing end-to-end reachability, three strange symptoms occur:
 2. **Active Unreachability:** `R1# ping 20.1.1.1` results in **0% success**, but instead of standard timeouts (`.....`), it returns `U.U.U`. The network is actively telling us it's unreachable.
 3. **Total Failure on Source Change:** `R2# ping 10.1.1.1 source 20.1.1.1` results in **100% packet loss** (`.....`). Simply altering the source address causes a partially working ping to die completely.
 
-### Your Mission
+### Your Task
 * Why does the ping behave differently depending on direction and source?
 * What does the `U` symbol indicate, and which device is generating it?
 * Why does adding the `source` modifier completely kill the connection?
