@@ -1,6 +1,6 @@
 # Network Troubleshooting Lab: 60% Packet Loss
 
-> **Credits:** Recreated from the troubleshooting scenario *"60% Packet Loss in a Network"* by **Praphul Mishra (PM Networking)**. 
+> **Credits:** Recreated from the troubleshooting scenario *"60% Packet Loss in a Network"* by **Praphul Mishra (PM Networking)**. <br>
 > 📺 [Watch the original video here](<YouTube link>)
 
 This lab simulates a common real-world issue where two remote sites connected across a service provider network are unable to ping each other. While the physical and data-link layers look perfectly healthy, traffic between the sites fails in erratic, unexpected ways.
