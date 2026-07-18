@@ -18,7 +18,7 @@ Picture two corporate offices:
 Neither router connects to the other directly. Instead, both hand their traffic to a service provider in the middle (represented by the MPLS cloud), which is responsible for routing packets end-to-end.
 
 ## Topology
-![Topology Diagram](screenshots/broken_topology.png)
+![Topology Diagram](screenshot/broken_topology.png)
 ### IP Addressing Architecture
 * **R1:** LAN: `10.1.1.1/24` | WAN: `1.1.1.1/24`
 * **MPLS Provider:** FastEthernet0/0: `1.1.1.2/24` | FastEthernet0/1: `2.2.2.2/24`
